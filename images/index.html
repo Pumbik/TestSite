@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Maserati</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/scrypts.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header"><img src="Header.png" alt="Шапка"/></div>
+            <div id="content">
+                <div id="nav">
+                    <ul>
+                        <li><a title="На главную" href="index.html"><img src="Logo.jpg" alt="Логотип"/></a></li>
+                        <li><a title="Ghibli" href="Ghibli.html"> Ghibli</a></li>
+                        <li><a title="Quattroporte" href="Quattroporte.html">Quattroporte</a></li>
+                        <li><a title="GranTurismo" href="GranTurismo.html">GranTurismo</a></li>
+                    </ul>
+                    <div id="map"><img src="Map.jpg" alt="Карта"/></div>
+                </div>
+                <div id="main">
+                    <table>
+                        <tr>
+                            <th id="main_title" colspan="3"><h1>Главная</h1></th>
+                        </tr>
+                        <tr>
+                            <td class="small_card">
+                                <img src="Ghibli.jpg" alt="Ghibli"/>
+                                <div class="content">
+                                    <small>Бизнес класс</small>
+                                    <h2>Ghibli</h2>
+                                    <p>Maserati Ghibli III – седан бизнес-класса итальянской компании Maserati, который поступил в продажу во второй половине 2013</p>
+                                    <a title="Ghibli" href="Ghibli.html">Перейти</a>
+                                </div>
+                            </td>
+                            <td class="small_card">
+                                <img src="Quatro.jpg" alt="Quattroporte"/>
+                                <div class="content">
+                                    <small>Представительский класс</small>
+                                    <h2>Quattroporte</h2>
+                                    <p>When Maserati presented the first Quattroporte at the 1963 Turin Motor Show, it not only launched the fastest four-seater car in the world.</p>
+                                    <a title="Quattroporte" href="Quattroporte.html"> Перейти</a>
+                                </div>
+                            </td>
+                            <td class="small_card">
+                                <img src="Grand.jpg" alt="GranTurismo"/>
+                                <div class="content">
+                                    <small>Купе</small>
+                                    <h2>GranTurismo</h2>
+                                    <p>GranTurismo embodies the irresistible allure of true Italian style, combined with exhilarating, race-bred performance.</p>
+                                    <a title="GranTurismo" href="GranTurismo.html"> Перейти</a>
+                                </div>                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="big_card" colspan="3">
+                                <img src="Form.png" alt="Форма"/>
+                                <form onsubmit="return false" action="/Home/Order" method="POST">
+                                    <fieldset>
+                                        <legend>Оформление заказа</legend>
+                                        <input type="text" name="Name" placeholder="Введите Ваше имя" required/><br/>
+                                        <input type="tel" name="Tel" placeholder="8-xxx-xxx-xx-xx" required pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"/><br/>
+                                        <select name="Car">
+                                            <option value="Ghibli">Ghibli</option>
+                                            <option value="Quattroporte">Quattroporte</option>
+                                            <option value="GranTurismo">GranTurismo</option>
+                                        </select>
+                                        <input type="submit"/>
+                                    </fieldset>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="footer"><h2>Copyrite</h2></div>
+        
+        </div>
+    </body>
+</html>

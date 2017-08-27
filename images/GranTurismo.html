@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Maserati</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <script src="js/scrypts.js" type="text/javascript">
+        </script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="header"><img src="Header.png" alt="Шапка"/></div>
+            <div id="content">
+                <div id="nav">
+                    <ul>
+                        <li><a title="На главную" href="index.html"><img src="Logo.jpg" alt="Логотип"/></a></li>
+                        <li><a title="Ghibli" href="Ghibli.html"> Ghibli</a></li>
+                        <li><a title="Quattroporte" href="Quattroporte.html">Quattroporte</a></li>
+                        <li><a title="GranTurismo" href="GranTurismo.html">GranTurismo</a></li>
+                    </ul>
+                    <div id="map"><img src="Map.jpg" alt="Карта"/></div>
+                </div>
+                <div id="main">
+                    <table>
+                        <tr>
+                            <th id="main_title" colspan="3"><h1>GranTurismo</h1></th>
+                        </tr>
+                        <tr class="big_pic">
+                            <td colspan="3"><img id="preview" src="GranTurismo-1.jpeg" alt="Превью"/></td>
+                        </tr>
+                        <tr class="small_pic">
+                            <td><img onclick="SetImg(this.src)" src="GranTurismo-1.jpeg" alt="Перед"/></td>
+                            <td><img onclick="SetImg(this.src)" src="GranTurismo-2.jpeg" alt="Бок"/></td>
+                            <td><img onclick="SetImg(this.src)" src="GranTurismo-3.jpeg" alt="Салон"/></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="footer"><h2>Copyrite</h2></div>
+        
+        </div>
+    </body>
+</html>
